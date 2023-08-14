@@ -1,0 +1,96 @@
+.navbar {
+    background-color: #ba00e8;
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo .h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar .search input {
+    padding: 8px;
+    border-radius: 0.5rem;
+
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+
+    font-size: 16px;
+    color: #333;
+}
+
+.navbar .my-profile .my-user-name {
+    margin: 0px;
+}
+
+.navbar .my-profile .my-profile-picture {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.navbar .my-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar .search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .my-profile,
+.navbar .search,
+.navbar .logo {
+    padding: 0px 20px;
+}
+
+.navbar .my-profile:hover {
+    cursor: pointer;
+}
+
+.navbar .logo:hover {
+    cursor: default;
+}
+
+@media screen and (max-width: 780px) {
+    .navbar .my-profile .my-user-name {
+        display: none;
+    }
+    .navbar .search input {
+        display: none;
+    }
+    .navbar .search {
+        padding: 0px 30px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .my-profile .my-profile-picture {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar .logo {
+        font-size: small;
+    }
+}
+
+.navbar .my-profile button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

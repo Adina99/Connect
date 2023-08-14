@@ -1,0 +1,22 @@
+.contact .contact-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0.25rem 1rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem 0rem;
+}
+
+.contact:hover {
+    cursor: pointer;
+    background-color: #e7e7e7;
+}

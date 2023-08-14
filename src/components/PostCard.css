@@ -1,0 +1,119 @@
+.post-card {
+    max-width: 480px;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.post-photo {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.post-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-card .post-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.post-card .post-buttons .like button {
+    cursor: pointer;
+    background-color: #e7e7e7;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    outline: inherit;
+    font-weight: bold;
+}
+
+.post-card .post-buttons .like button.active {
+    color: #ba00e8;
+}
+
+.post-card .post-buttons .show-comments button {
+    cursor: pointer;
+    background-color: #e7e7e7;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    outline: inherit;
+    font-weight: bold;
+}
+
+.post-card .post-buttons .show-comments button.active {
+    color: #ba00e8;
+}
+
+.post-card .post-buttons .show-comments p {
+    text-align: right;
+}
+
+.post-card .post-comments .comment-form {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.post-card .post-comments .comment-form input {
+    width: max-content;
+    width: 100%;
+    padding: 6px;
+    border-radius: 0.25rem;
+
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+
+    color: #333;
+}
+
+.post-card .post-comments .comment-form button {
+    border: none;
+    cursor: pointer;
+}
+
+.post-card .post-comments .comment-section .comment-profile .comment-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-card .post-comments .comment-section .comment-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-card .post-comments .comment-section {
+    padding: 0.25rem 1rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1rem 0rem;
+    font-size: smaller;
+}
+
+.number-of-comments {
+    color: white;
+}
